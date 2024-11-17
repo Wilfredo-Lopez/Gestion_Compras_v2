@@ -100,7 +100,7 @@ namespace Gestion_Compras
             integrantesForms.Show();
             this.Hide();
         }
-
+        //prueba
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
