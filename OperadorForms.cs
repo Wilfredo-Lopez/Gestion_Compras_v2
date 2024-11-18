@@ -56,7 +56,17 @@ namespace Gestion_Compras
             // Recupera los valores de los campos de entrada
             string producto = textProducto.Text;
             string descripcion = textDescripcion.Text;
-            int cantidadStock = (int)nudCantStock.Value;
+            int cantidadStock;
+            if (int.TryParse(textCantStock.Text, out cantidadStock))
+            {
+                // La conversión a int fue exitosa, puedes usar la variable cantidadStock
+            }
+            else
+            {
+                // La conversión a int falló, maneja el error de acuerdo a tus necesidades
+                MessageBox.Show("El valor ingresado en el campo de cantidad de stock no es válido. Por favor, ingrese un número entero.");
+                return;
+            }
             decimal precioVenta = decimal.Parse(textPrecioVenta.Text);
             DateTime fecha = dtpFecha.Value;
 
@@ -105,7 +115,7 @@ namespace Gestion_Compras
             textId.Clear();
             textProducto.Clear();
             textDescripcion.Clear();
-            nudCantStock.Value = 0;
+            textCantStock.Clear();
             textPrecioVenta.Clear();
             dtpFecha.Value = DateTime.Now;
         }
@@ -122,7 +132,7 @@ namespace Gestion_Compras
 
             // Obtiene el ID del producto seleccionado y la cantidad a añadir al stock
             int idProducto = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["idProductos"].Value);
-            int cantidadStock = (int)nudCantStock.Value;
+            int cantidadStock = Convert.ToInt32(textCantStock.Text);
 
             // Verifica que la cantidad sea válida
             if (cantidadStock <= 0)
@@ -168,7 +178,7 @@ namespace Gestion_Compras
                 textId.Text = row.Cells["idProductos"].Value.ToString();
                 textProducto.Text = row.Cells["Producto"].Value.ToString();
                 textDescripcion.Text = row.Cells["descripcion"].Value.ToString();
-                nudCantStock.Value = Convert.ToDecimal(row.Cells["cantStock"].Value);
+                textCantStock.Text = row.Cells["cantStock"].Value.ToString();
                 textPrecioVenta.Text = row.Cells["Precio_venta"].Value.ToString();
                 dtpFecha.Value = Convert.ToDateTime(row.Cells["fecha"].Value);
             }
@@ -219,16 +229,16 @@ namespace Gestion_Compras
             }
         }
 
-        // Evento que se ejecuta al hacer clic en el botón Regresar, muestra el formulario principal y oculta el actual
+        // Evento que se ejecuta al hacer clic en el botón Regresar
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
-            form.Show();
-            this.Hide();
+            // Cierra el formulario actual y abre el formulario principal
+            this.Close();
+            Form1 formPrincipal = new Form1();
+            formPrincipal.Show();
         }
 
-        private void btnLimpiar_Click(object sender, EventArgs e)
-        {
+        private void btnLimpiar_Click(Object sender, EventArgs e) {
             LimpiarCampos();
         }
     }

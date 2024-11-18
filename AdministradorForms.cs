@@ -55,5 +55,12 @@ namespace Gestion_Compras
             pedidos.Show();
             this.Hide();
         }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            OpAd opAd = new OpAd();
+            opAd.Show();
+            this.Hide();
+        }
     }
 }

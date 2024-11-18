@@ -38,6 +38,8 @@
             this.btnRegresar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.btnPedidos = new System.Windows.Forms.Button();
+            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -51,7 +53,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(98, 219);
+            this.button1.Location = new System.Drawing.Point(98, 124);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 40);
             this.button1.TabIndex = 1;
@@ -62,7 +64,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(66, 160);
+            this.label2.Location = new System.Drawing.Point(66, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(155, 16);
             this.label2.TabIndex = 2;
@@ -71,7 +73,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(520, 160);
+            this.label3.Location = new System.Drawing.Point(523, 82);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(170, 16);
             this.label3.TabIndex = 3;
@@ -79,7 +81,7 @@
             // 
             // btnProductos
             // 
-            this.btnProductos.Location = new System.Drawing.Point(544, 219);
+            this.btnProductos.Location = new System.Drawing.Point(559, 124);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(80, 39);
             this.btnProductos.TabIndex = 4;
@@ -89,7 +91,7 @@
             // 
             // btnHistorialActividades
             // 
-            this.btnHistorialActividades.Location = new System.Drawing.Point(98, 345);
+            this.btnHistorialActividades.Location = new System.Drawing.Point(86, 241);
             this.btnHistorialActividades.Name = "btnHistorialActividades";
             this.btnHistorialActividades.Size = new System.Drawing.Size(106, 37);
             this.btnHistorialActividades.TabIndex = 5;
@@ -100,7 +102,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(66, 314);
+            this.label4.Location = new System.Drawing.Point(25, 198);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(246, 16);
             this.label4.TabIndex = 6;
@@ -108,7 +110,7 @@
             // 
             // btnRegresar
             // 
-            this.btnRegresar.Location = new System.Drawing.Point(680, 406);
+            this.btnRegresar.Location = new System.Drawing.Point(691, 406);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(87, 32);
             this.btnRegresar.TabIndex = 7;
@@ -119,7 +121,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(532, 314);
+            this.label5.Location = new System.Drawing.Point(541, 198);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 16);
             this.label5.TabIndex = 8;
@@ -127,7 +129,7 @@
             // 
             // btnPedidos
             // 
-            this.btnPedidos.Location = new System.Drawing.Point(544, 346);
+            this.btnPedidos.Location = new System.Drawing.Point(559, 242);
             this.btnPedidos.Name = "btnPedidos";
             this.btnPedidos.Size = new System.Drawing.Size(80, 36);
             this.btnPedidos.TabIndex = 9;
@@ -135,11 +137,32 @@
             this.btnPedidos.UseVisualStyleBackColor = true;
             this.btnPedidos.Click += new System.EventHandler(this.btnPedidos_Click);
             // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.Location = new System.Drawing.Point(86, 338);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(106, 36);
+            this.btnUsuarios.TabIndex = 10;
+            this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(86, 316);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 16);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Usuarios";
+            // 
             // AdministradorForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.btnPedidos);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnRegresar);
@@ -170,5 +193,7 @@
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnPedidos;
+        private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Label label6;
     }
 }

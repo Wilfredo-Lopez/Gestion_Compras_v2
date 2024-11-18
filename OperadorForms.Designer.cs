@@ -40,15 +40,14 @@
             this.textId = new System.Windows.Forms.TextBox();
             this.textProducto = new System.Windows.Forms.TextBox();
             this.textDescripcion = new System.Windows.Forms.TextBox();
-            this.nudCantStock = new System.Windows.Forms.NumericUpDown();
             this.textPrecioVenta = new System.Windows.Forms.TextBox();
             this.btnAnadirProducto = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnEliminarProducto = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.textCantStock = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCantStock)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -154,13 +153,6 @@
             this.textDescripcion.Size = new System.Drawing.Size(100, 22);
             this.textDescripcion.TabIndex = 11;
             // 
-            // nudCantStock
-            // 
-            this.nudCantStock.Location = new System.Drawing.Point(319, 70);
-            this.nudCantStock.Name = "nudCantStock";
-            this.nudCantStock.Size = new System.Drawing.Size(120, 22);
-            this.nudCantStock.TabIndex = 12;
-            // 
             // textPrecioVenta
             // 
             this.textPrecioVenta.Location = new System.Drawing.Point(628, 28);
@@ -218,18 +210,25 @@
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
+            // textCantStock
+            // 
+            this.textCantStock.Location = new System.Drawing.Point(329, 70);
+            this.textCantStock.Name = "textCantStock";
+            this.textCantStock.Size = new System.Drawing.Size(100, 22);
+            this.textCantStock.TabIndex = 19;
+            // 
             // OperadorForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1165, 509);
+            this.Controls.Add(this.textCantStock);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnEliminarProducto);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnAnadirProducto);
             this.Controls.Add(this.textPrecioVenta);
-            this.Controls.Add(this.nudCantStock);
             this.Controls.Add(this.textDescripcion);
             this.Controls.Add(this.textProducto);
             this.Controls.Add(this.textId);
@@ -246,7 +245,6 @@
             this.Text = "OperadorForms";
             this.Load += new System.EventHandler(this.OperadorForms_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCantStock)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,12 +264,12 @@
         private System.Windows.Forms.TextBox textId;
         private System.Windows.Forms.TextBox textProducto;
         private System.Windows.Forms.TextBox textDescripcion;
-        private System.Windows.Forms.NumericUpDown nudCantStock;
         private System.Windows.Forms.TextBox textPrecioVenta;
         private System.Windows.Forms.Button btnAnadirProducto;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnEliminarProducto;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.TextBox textCantStock;
     }
 }

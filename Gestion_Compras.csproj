@@ -89,6 +89,12 @@
     <Compile Include="IntegrantesForms.Designer.cs">
       <DependentUpon>IntegrantesForms.cs</DependentUpon>
     </Compile>
+    <Compile Include="OpAd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpAd.Designer.cs">
+      <DependentUpon>OpAd.cs</DependentUpon>
+    </Compile>
     <Compile Include="OperadorForms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IntegrantesForms.resx">
       <DependentUpon>IntegrantesForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpAd.resx">
+      <DependentUpon>OpAd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OperadorForms.resx">
       <DependentUpon>OperadorForms.cs</DependentUpon>
