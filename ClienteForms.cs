@@ -222,6 +222,7 @@ namespace Gestion_Compras
             HistorialComprasForm form = new HistorialComprasForm();
             form.CargarHistorialCompras(idCliente);
             form.Show();
+            this.Hide();
 
         }
         //botón que regresa al login
