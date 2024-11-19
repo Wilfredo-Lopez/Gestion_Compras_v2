@@ -17,6 +17,7 @@ namespace Gestion_Compras
         public Form1()
         {
             InitializeComponent();
+            password.PasswordChar = '*';
         }
         private void Form1_Load(object sender, EventArgs e)
         {

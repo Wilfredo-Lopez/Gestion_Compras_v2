@@ -219,7 +219,7 @@ namespace Gestion_Compras
         private void btnHistorial_Click(object sender, EventArgs e)
         {
             int idCliente = ObtenerIdCliente();
-            HistorialComprasForm form = new HistorialComprasForm();
+            HistorialComprasForm form = new HistorialComprasForm(idClienteActual);
             form.CargarHistorialCompras(idCliente);
             form.Show();
             this.Hide();
